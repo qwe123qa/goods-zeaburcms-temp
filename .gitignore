@@ -21,7 +21,6 @@ debug.log
 /vendor
 
 *.map
-*.lock
 
 thumbs
 source
