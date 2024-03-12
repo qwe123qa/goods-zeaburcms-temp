@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "basic";
+
+
+
+.basic-hover{
+	cursor: pointer;
+	transition: all .3s;
+	&:hover{opacity: .6;}
+}
+.nobrOnMobile{
+	@screen lg{
+		br{display: none;}
+	}
+}
+
+input, textarea, select{
+	&.error{
+		border: 1px solid #f00;
+	}
+	// 去掉iphone的圓角
+	@screen lg{
+		border-radius: 0;
+	}
+}
+
+body{
+	overflow-x: hidden;
+}
+
+
+:root{
+	// --cmsLinkColor: theme('colors.brown.DEFAULT');
+}
+
+.container{
+	max-width: 1400px;
+}

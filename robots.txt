@@ -1,0 +1,6 @@
+user-agent: *
+disallow: /*/cms
+disallow: /*/_gsdata_
+disallow: /*/Connections
+disallow: /cgi-bin
+disallow: /.well-known
