@@ -77,7 +77,7 @@ $config = array(
     |
 	NOTE: 上線要改成 /source/
     */
-    'upload_dir' => ($_SERVER['SERVER_NAME'] === 'localhost') ? '/longwave/source/' : '/source/',
+    'upload_dir' => ($_SERVER['SERVER_NAME'] === 'localhost') ? substr($_SERVER['REQUEST_URI'], 0, strpos($_SERVER['REQUEST_URI'], '/', 1)) . '/source/' : '/source/',
     /*
     |--------------------------------------------------------------------------
     | relative path from filemanager folder to upload folder
